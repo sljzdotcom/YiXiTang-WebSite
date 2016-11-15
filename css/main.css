@@ -5,12 +5,39 @@
  */
 
 
+/* ##############   Common   ##############*/
+.bottom-shadow {
+	position:absolute;
+	background:url(../images/bottom-shadow.png) repeat-x scroll 0 0;
+	height:4px;
+	width:100%;
+	top:496px;
+	left:0;
+	z-index:200;
+	opacity:0.5;
+}
+.bottom-bar {
+	width:100%;
+	height:6px;
+	background-color: #e95504;
+}
+.fa-margin {
+	margin-right:8px;
+}
 .brand-image {
 	width: 430px;
     height:auto;
 }
+.hrClass {
+	height:1px;
+	border:none;
+	border-top:1px solid #bbbbbb;
+}
 
-/* ##############   随浏览器滚动的菜单（初始样式） */
+
+
+
+/* ##############   Stickmenu（初始样式）   ##############*/
 .stickmenu {
 	background: rgba(255, 255, 255, 0.4) !important;
 	filter:Alpha(opacity=90);
@@ -19,7 +46,6 @@
 	z-index: 9999999;
 	position: absolute;
 }
-
 .stickmenu p {
 	font-size: 16px;
 	line-height: 40px;
@@ -33,7 +59,7 @@
 .stickmenu p a:active {color:#0d0d0d;display:block;}
 
 
-/* ##############   随浏览器滚动的菜单（滚动后样式） */
+/* ##############   Stickmenu（滚动后样式）   ##############*/
 .stickmenuNew {
 	background: rgba(36, 36, 36, 0.3) !important;
 	filter:Alpha(opacity=90);
@@ -42,7 +68,6 @@
 	z-index: 9999999;
 	position: absolute;
 }
-
 .stickmenuNew p {
 	font-size: 16px;
 	line-height: 40px;
@@ -57,13 +82,195 @@
 
 
 
-.bottom-shadow {
+
+/* ##############   About Us   ##############*/
+.aboutusContainer {
+	margin-bottom: 85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+}
+.aboutus {
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top:25px;
+}
+.aboutusChinese {
+	color: #e95504;
+	font-size: 24px;
+	font-weight: bold;
+}
+.aboutusContent {
+	margin-top:40px;
+	font-size:18px;
+}
+
+
+
+/* ##############   Product   ##############*/
+.productContainer {
+	margin-bottom: 85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+	background-color: #e8eaeb;
+}
+.productTitle {
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top:85px;
+}
+.productChinese {
+	color: #e95504;
+	font-size: 24px;
+	font-weight: bold;
+}
+.productContent{
+	margin-top:40px;
+	margin-bottom: 85px;
+	font-size:18px;
+}
+.productDetail {
+	float:left;
+	background-color: black;
+	display:block;
+	width:50%;
+}
+.productContentImg {
+	width:360px;
+	height:360px;
+}
+
+.product-custom-img img {
+	width:236px;
+	height:236px;
+}
+
+.product-custom-arrow img {
+	z-index: 9999;
 	position:absolute;
-	background:url(../images/bottom-shadow.png) repeat-x scroll 0 0;
-	height:4px;
+	margin-top:-130px;
+	margin-left:216px;
+}
+.product-custom-arrow1 img {
+	z-index: 9999;
+	position:absolute;
+	margin-top:-130px;
+	margin-left:236px;
+	/* Rotate div */
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* Internet Explorer */
+	-moz-transform:rotate(180deg); /* Firefox */
+	-webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+	-o-transform:rotate(180deg); /* Opera */
+}
+.productContent table, td, th
+{
+	border:0px;border-spacing:0;
+	background-color: white;
+}
+
+
+
+/* ##############   News   ##############*/
+.newsContainer {
+	margin-bottom: 85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+}
+.news {
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top:25px;
+}
+.newsChinese {
+	color: #e95504;
+	font-size: 24px;
+	font-weight: bold;
+}
+.newsContent{
+	margin-top:40px;
+	font-size:18px;
+	line-height:40px;
+}
+
+
+/* ##############   Contact Us   ##############*/
+.contactusContainer {
+	margin-bottom: 85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+	background-color: #e8eaeb;
+}
+.contactusTitle {
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top:85px;
+}
+.contactusChinese {
+	color: #e95504;
+	font-size: 24px;
+	font-weight: bold;
+}
+.contactusContent{
+	margin-top:40px;
+	margin-bottom: 85px;
+	font-size:18px;
+}
+.contactus img {
+	margin-right:6%;
+	margin-left:6%;
+}
+
+
+
+/* ##############   Link Us   ##############*/
+.linkusContainer {
+	margin-bottom: 85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+}
+.linkusTitle {
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	margin-top:25px;
+}
+.linkusChinese {
+	color: #e95504;
+	font-size: 24px;
+	font-weight: bold;
+}
+.linkusContent{
+	margin-top:40px;
+	margin-bottom: 45px;
+	font-size:18px;
+}
+.linkus img {
+	margin-top:10px;
+	margin-right:3%;
+	margin-left:3%;
+}
+
+
+
+
+/* ##############   Copyright   ##############*/
+.bottom-container {
 	width:100%;
-	top:496px;
-	left:0;
-	z-index:200;
-	opacity:0.5;
+	height:170px;
+	background-color: #4d4a49;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
+	color:white;
+	font-size:14px;
+/*    position:fixed;
+    bottom:0;
+    _position:absolute;
+    _margin-top:expression(this.style.pixelHeight+document.documentElement.scrollTop);*/
+}
+.bottom-content {
+	margin-top: 40px;
+}
+.bottom-copyright {
+	margin-top:98px;
+}
+.bottom-code {
+	margin-top:9px;
 }
