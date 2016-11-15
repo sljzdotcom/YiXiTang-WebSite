@@ -26,13 +26,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
-    
+
     <!-- Font Awesome 4.7.0 -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- AmazeUI 2.7.2 -->
     <link rel="stylesheet" href="AmazeUI-2.7.2/assets/css/amazeui.min.css">
     <link rel="stylesheet" href="AmazeUI-2.7.2/assets/css/app.css">
+
+    <!-- Swiper 3.4.0 -->
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,9 +53,9 @@
 			<div class="container">
 				<div class="navbar-header">
                     <a href="#" class="navbar-brand">
-                        <img alt="Brand" class="brand-image" src="images/logo.jpg"  />
+                        <img alt="Brand" class="brand-image img-responsive" src="images/logo.jpg"  />
                     </a>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" style="margin-top:22px;">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" style="position:absolute;right:1px;margin-top:22px;">
 						<span class="sr-only">菜单</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -67,7 +70,7 @@
                         </p>
 						<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Search" size="18">
+								<input type="text" class="form-control" placeholder="Search" size="10">
 							</div>
 							<button type="submit" class="btn btn-default">
 							    <i class="fa fa-search fa-fw fa-margin"></i>搜索
@@ -79,72 +82,115 @@
 			</div>
 		</nav>
 	</div>
-    
+
 
     <!-- Stickmenu  ============================ -->
     <div class="stickmenu" id="stickmenu">
         <div class="container">
             <div class="row">
                 <div class="col-xs-1"></div>
-                <div class="col-xs-2"><p class="text-center">
-                    <a href="#"><i class="fa fa-home fa-fw fa-margin"></i>网站首页</a></p>
+                <div class="col-xs-2">
+                    <p class="text-center">
+                        <a href="#">
+                            <i class="fa fa-home fa-fw fa-margin"></i>
+                            <span class="hidden-xs">网站首页</span>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-xs-2"><p class="text-center">
-                    <a href="#"><i class="fa fa-info-circle fa-fw fa-margin"></i>企业介绍</a></p>
+                <div class="col-xs-2">
+                    <p class="text-center">
+                        <a href="#">
+                            <i class="fa fa-info-circle fa-fw fa-margin"></i>
+                            <span class="hidden-xs">企业介绍</span>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-xs-2"><p class="text-center">
-                    <a href="#"><i class="fa fa-book fa-fw fa-margin"></i>产品介绍</a></p>
+                <div class="col-xs-2">
+                    <p class="text-center">
+                        <a href="#">
+                            <i class="fa fa-book fa-fw fa-margin"></i>
+                            <span class="hidden-xs">产品介绍</span>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-xs-2"><p class="text-center">
-                    <a href="#"><i class="fa fa-newspaper-o fa-fw fa-margin"></i>新闻资讯</a></p>
+                <div class="col-xs-2">
+                    <p class="text-center">
+                        <a href="#">
+                            <i class="fa fa-newspaper-o fa-fw fa-margin"></i>
+                            <span class="hidden-xs">新闻资讯</span>
+                        </a>
+                    </p>
                 </div>
-                <div class="col-xs-2"><p class="text-center">
-                    <a href="#"><i class="fa fa-envelope fa-fw fa-margin"></i>联系我们</a></p>
+                <div class="col-xs-2">
+                    <p class="text-center">
+                        <a href="#">
+                            <i class="fa fa-envelope fa-fw fa-margin"></i>
+                            <span class="hidden-xs">联系我们</span>
+                        </a>
+                    </p>
                 </div>
                 <div class="col-xs-1"></div>
             </div>
         </div>
     </div>
-    
+
 
     <!-- Carousel  ============================ -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/2.jpg" /></div>
+            <div class="swiper-slide"><img src="images/3.jpg" /></div>
+            <div class="swiper-slide"><img src="images/4.jpg" /></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+        <div class="bottom-bar"></div>
+    </div>
+
+<!--    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        &lt;!&ndash; Indicators &ndash;&gt;
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox" style="background-size: cover;">
             <div class="item active">
                 <img src="images/2.jpg" alt="First slide" class="img-responsive">
-<!--                <div class="container">
+&lt;!&ndash;                <div class="container">
                     <div class="carousel-caption">
                         <h1>情系航天人</h1>
                         <p>这些年,习近平这样谈“航天梦”情系航天人</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">详情</a></p>
                     </div>
-                </div>-->
+                </div>&ndash;&gt;
             </div>
             <div class="item">
                 <img src="images/3.jpg" alt="Second slide" class="img-responsive">
-<!--                <div class="container">
+&lt;!&ndash;                <div class="container">
                     <div class="carousel-caption">
                         <h1>美国总统</h1>
                         <p>习近平致电祝贺特朗普当选美国总统</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">详情</a></p>
                     </div>
-                </div>-->
+                </div>&ndash;&gt;
             </div>
             <div class="item">
                 <img src="images/4.jpg" alt="Third slide" class="img-responsive">
-<!--                <div class="container">
+&lt;!&ndash;                <div class="container">
                     <div class="carousel-caption">
                         <h1>李克强</h1>
                         <p>90秒纵览李克强出访八天四国五站</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">详情</a></p>
                     </div>
-                </div>-->
+                </div>&ndash;&gt;
             </div>
         </div>
 
@@ -156,26 +202,26 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
-        <!--<div class="bottom-shadow"></div>-->
+        &lt;!&ndash;<div class="bottom-shadow"></div>&ndash;&gt;
         <div class="bottom-bar"></div>
-    </div><!-- /.carousel -->
+    </div>&lt;!&ndash; /.carousel &ndash;&gt;-->
 
-   
+
     <!-- About Us  ============================ -->
     <div class="container aboutusContainer">
         <p class="text-center aboutus">ABOUT US</p>
         <div class="text-center">
             <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-2"><p class="text-center aboutusChinese">关于我们</p></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-1"></div>
+                <!--<div class="col-md-1 col-xs-1"></div>-->
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <div class="col-md-2 col-xs-4"><p class="text-center aboutusChinese">关于我们</p></div>
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <!--<div class="col-md-1 col-xs-1"></div>-->
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-10">
+            <!--<div class="col-xs-1"></div>-->
+            <div class="col-xs-12">
                 <p class="aboutusContent">
                     青海省青海湖药业有限公司始建于1987年，是国家定点麻黄素生产企业之一。资产总额达到29800万元，现有职工300人，拥有50人的甘草研究团队，其中：在职博士学历10人，研究生学历27人，本科学历13人。
                     <br /><br />
@@ -184,7 +230,7 @@
                     青海湖药业将始终致力于企业团队精神，立足特色资源配置，不断开发绿色多元化的产品，进一步开拓新兴产业市场的发展方向。同时，依托正在规划实施中的青海省海南州青海湖药业生物医药产业园，把主营业务进一步做大做强，为打造中国西部特色生物医药产业群，为地方经济的发展做出更大贡献。
                 </p>
             </div>
-            <div class="col-xs-1"></div>
+            <!--<div class="col-xs-1"></div>-->
         </div>
     </div>
 
@@ -195,46 +241,40 @@
             <p class="text-center productTitle">PRODUCTS</p>
             <div class="text-center">
                 <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-4"><hr class="hrClass" /></div>
-                    <div class="col-xs-2"><p class="text-center productChinese">产品中心</p></div>
-                    <div class="col-xs-4"><hr class="hrClass" /></div>
-                    <div class="col-xs-1"></div>
+                    <!--<div class="col-xs-1"></div>-->
+                    <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                    <div class="col-md-2 col-xs-4"><p class="text-center productChinese">产品中心</p></div>
+                    <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                    <!--<div class="col-xs-1"></div>-->
                 </div>
             </div>
             <div class="row productContent">
                 <div class="col-xs-1"></div>
-                <div class="col-xs-10">
                     <div class="table-responsive">
                         <table>
                             <tr>
                                 <td>
-                                    <span class="product-custom-img"><img src="images/a1.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 300}" /></span>
-                                    <span class="product-custom-arrow"><img src="images/arrow.png" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></span>
+                                    <div><img src="images/a1.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 300}" /></div>
                                 </td>
-                                <td><span class="product-custom-img"><img src="images/a1-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></span></td>
+                                <td><div><img src="images/a1-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></div></td>
                                 <td>
-                                    <span class="product-custom-img"><img src="images/a1.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 300}" /></span>
-                                    <span class="product-custom-arrow"><img src="images/arrow.png" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></span>
+                                    <div><img src="images/a3.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 300}" /></div>
                                 </td>
-                                <td><span class="product-custom-img"><img src="images/a2-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></span></td>
+                                <td><div><img src="images/a2-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-right', delay: 300}" /></div></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span class="product-custom-img"><img src="images/a3-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-left', delay: 600}" /></span>
-                                    <span class="product-custom-arrow1"><img src="images/arrow.png" /></span>
+                                    <div><img src="images/a3-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-left', delay: 600}" /></div>
                                 </td>
-                                <td><span class="product-custom-img"><img src="images/a1.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 600}" /></span></td>
+                                <td><div><img src="images/a4.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 600}" /></div></td>
                                 <td>
-                                    <span class="product-custom-img"><img src="images/a4-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-left', delay: 600}" /></span>
-                                    <span class="product-custom-arrow1"><img src="images/arrow.png" /></span>
+                                    <div><img src="images/a4-1.png" class="img-responsive" data-am-scrollspy="{animation: 'slide-left', delay: 600}" /></div>
                                 </td>
-                                <td><span class="product-custom-img"><img src="images/a1.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 600}" /></span></td>
+                                <td><div><img src="images/a2.png" class="img-responsive" data-am-scrollspy="{animation: 'scale-up', delay: 600}" /></div></td>
                             </tr>
                         </table>
                     </div>
                 </div>
-                <div class="col-xs-1"></div>
             </div>
         </div>
     </div>
@@ -245,20 +285,20 @@
         <p class="text-center news">NEWS CENTER</p>
         <div class="text-center">
             <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-2"><p class="text-center newsChinese">新闻中心</p></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-1"></div>
+                <!--<div class="col-xs-1"></div>-->
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <div class="col-md-2 col-xs-4"><p class="text-center newsChinese">新闻中心</p></div>
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <!--<div class="col-xs-1"></div>-->
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-5">
-                <div class="newsContent">
+            <!--<div class="col-xs-1"></div>-->
+            <div class="col-md-6 col-xs-12">
+                <div class="newsContent text-left">
                     <ul>
                         <li><span class="label label-danger">New !</span>  飞讯-教练排名中超3主帅进前50</li>
-                        <li><span class="label label-danger">New !</span>  曝国安一年合同报价贝尔巴托夫</li>
+                        <li><span class="label label-danger">New !</span>  曝国安一年合同报价贝尔巴托夫贝尔巴托夫贝尔巴</li>
                         <li><span class="label label-success"><i class="fa fa-fire"></i></span> 米卢：中国足球可以成功 盼举办世界杯梦想成真</li>
                         <li><span class="label label-info">关注</span> 足协杯60周年最具影响力的球员评选</li>
                         <li>中超回购热潮仍未结束 多名留洋球员已被关注</li>
@@ -270,12 +310,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xs-5">
-                <p class="newsContent">
-                    <embed src='http://player.youku.com/player.php/sid/XMTgxNzA4NzUyMA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+            <div class="col-md-6 col-xs-12">
+                <p class="newsContent embed-responsive embed-responsive-4by3 text-right">
+                    <iframe class="embed-responsive-item" src="http://player.youku.com/embed/XMTgxODk3ODIyNA=="></iframe>
                 </p>
             </div>
-            <div class="col-xs-1"></div>
+            <!--<div class="col-xs-1"></div>-->
         </div>
     </div>
 
@@ -286,26 +326,25 @@
             <p class="text-center contactusTitle">CONTACT US</p>
             <div class="text-center">
                 <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-4"><hr class="hrClass" /></div>
-                    <div class="col-xs-2"><p class="text-center contactusChinese">联系我们</p></div>
-                    <div class="col-xs-4"><hr class="hrClass" /></div>
-                    <div class="col-xs-1"></div>
+                    <!--<div class="col-xs-1"></div>-->
+                    <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                    <div class="col-md-2 col-xs-4"><p class="text-center contactusChinese">联系我们</p></div>
+                    <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                    <!--<div class="col-xs-1"></div>-->
                 </div>
             </div>
             <div class="row contactusContent">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-10 text-center contactus">
+                <!--<div class="col-md-1 col-xs-2"></div>-->
+                <div class="col-xs-12 text-center contactus">
                     <a href="#"><img src="images/b1.png" data-am-scrollspy="{animation: 'fade', delay: 100}" /></a>
                     <a href="#"><img src="images/b2.png" data-am-scrollspy="{animation: 'fade', delay: 300}" /></a>
                     <a href="#"><img src="images/b3.png" data-am-scrollspy="{animation: 'fade', delay: 600}" /></a>
                     <a href="#"><img src="images/b4.png" data-am-scrollspy="{animation: 'fade', delay: 900}" /></a>
                 </div>
-                <div class="col-xs-1"></div>
+                <!--<div class="col-md-1 col-xs-2"></div>-->
             </div>
         </div>
     </div>
-
 
 
     <!-- Link Us  ============================ -->
@@ -313,16 +352,16 @@
         <p class="text-center linkusTitle">LINK US</p>
         <div class="text-center">
             <div class="row">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-2"><p class="text-center linkusChinese">友情链接</p></div>
-                <div class="col-xs-4"><hr class="hrClass" /></div>
-                <div class="col-xs-1"></div>
+                <!--<div class="col-xs-1"></div>-->
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <div class="col-md-2 col-xs-4"><p class="text-center linkusChinese">友情链接</p></div>
+                <div class="col-md-5 col-xs-4"><hr class="hrClass" /></div>
+                <!--<div class="col-xs-1"></div>-->
             </div>
         </div>
         <div class="row linkusContent">
-            <div class="col-xs-1"></div>
-            <div class="col-xs-10 text-center linkus" data-am-scrollspy="{animation: 'scale-down', delay: 600}">
+            <!--<div class="col-xs-1"></div>-->
+            <div class="col-xs-12 text-center linkus" data-am-scrollspy="{animation: 'scale-down', delay: 600}">
                 <a href="#"><img src="images/link1.png" /></a>
                 <a href="#"><img src="images/link2.png" /></a>
                 <a href="#"><img src="images/link3.png" /></a>
@@ -331,34 +370,35 @@
                 <a href="#"><img src="images/link6.png" /></a>
                 <a href="#"><img src="images/link7.png" /></a>
             </div>
-            <div class="col-xs-1"></div>
+            <!--<div class="col-xs-1"></div>-->
         </div>
     </div>
 
 
     <!-- Copyright  ============================ -->
     <div class="container-fluid bottom-container">
-        <div class="container">
-            <div class="row bottom-content">
-                <div class="col-xs-1"></div>
-                <div class="col-xs-4">
-                    <p class="bottom-logo"><img src="images/logo.jpg" class="img-responsive" /></p>
-                    <p class="bottom-copyright">沪 ICP备15034678号-1 2003-2016 版权所有</p>
+        <div class="container am-text-bottom">
+            <div class="row">
+                <!--<div class="col-xs-1"></div>-->
+                <div class="hidden-xs col-md-4 bottom-content">
+                    <p class="bottom-logo"><img src="images/logo.jpg" class="img-responsive img-rounded" /></p>
+                    <p class="bottom-copyright">沪 ICP备15034678号-1 ©2003-2016 版权所有</p>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-md-5 col-xs-8">
                     <p><h2>青海省青海湖药业有限公司</h2></p>
                     <p>总公司地址：青海省西宁市西关大街46号纺织品大厦17楼</p>
                     <p>总公司电话：+86 971 5366171</p>
                     <p>企业邮箱：XXX@aaa.com</p>
                 </div>
-                <div class="col-xs-2 bottom-code"><img src="images/code.png" /></div>
-                <div class="col-xs-1"></div>
+                <div class="col-md-3 col-xs-4 bottom-code text-right"><img src="images/code.png" /></div>
+                <!--<div class="col-xs-1"></div>-->
             </div>
         </div>
     </div>
     <div class="bottom-bar"></div>
 
 
+    <!-- Goto Top  ============================ -->
     <div data-am-widget="gotop" class="am-gotop am-gotop-fixed" style="position:fixed;padding-right:60px;padding-bottom:50px;" >
         <a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up am-active" id="amz-go-top"></a>
     </div>
@@ -387,6 +427,20 @@
     <![endif]-->
 
     <script src="AmazeUI-2.7.2/assets/js/amazeui.min.js"></script>
+    <script src="js/swiper-3.4.0.jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop : true,
+            autoplay : 5000,
+            spaceBetween: 30
+        });
+    </script>
 
 </body>
 </html>
