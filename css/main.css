@@ -51,7 +51,7 @@
 	line-height: 40px;
 	color:black;
 	font-weight: bold;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
+	/*font-family: "微软雅黑", "Heiti SC", "Arial";*/
 }
 .stickmenu p a:link {color: #0d0d0d;display:block;text-decoration: none;}
 .stickmenu p a:visited {color:#0d0d0d;display:block;}
@@ -73,7 +73,7 @@
 	line-height: 40px;
 	color:white;
 	font-weight: bold;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
+	/*font-family: "微软雅黑", "Heiti SC", "Arial";*/
 }
 .stickmenuNew p a:link {color:white;display:block;text-decoration: none;}
 .stickmenuNew p a:visited {color:white;display:block;}
@@ -86,18 +86,19 @@
 /* ##############   About Us   ##############*/
 .aboutusContainer {
 	margin-bottom: 85px;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .aboutus {
 	color: black;
 	font-size: 26px;
 	font-weight: bold;
 	margin-top:25px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .aboutusChinese {
 	color: #e95504;
 	font-size: 24px;
 	font-weight: bold;
+	margin-top:-20px;
 }
 .aboutusContent {
 	margin-top:40px;
@@ -109,7 +110,6 @@
 /* ##############   Product   ##############*/
 .productContainer {
 	margin-bottom: 85px;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 	background-color: #e8eaeb;
 }
 .productTitle {
@@ -117,11 +117,13 @@
 	font-size: 26px;
 	font-weight: bold;
 	margin-top:85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .productChinese {
 	color: #e95504;
 	font-size: 24px;
 	font-weight: bold;
+	margin-top:-20px;
 }
 .productContent{
 	margin-top:40px;
@@ -173,18 +175,19 @@
 /* ##############   News   ##############*/
 .newsContainer {
 	margin-bottom: 85px;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .news {
 	color: black;
 	font-size: 26px;
 	font-weight: bold;
 	margin-top:25px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .newsChinese {
 	color: #e95504;
 	font-size: 24px;
 	font-weight: bold;
+	margin-top:-20px;
 }
 .newsContent{
 	margin-top:40px;
@@ -196,7 +199,6 @@
 /* ##############   Contact Us   ##############*/
 .contactusContainer {
 	margin-bottom: 85px;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 	background-color: #e8eaeb;
 }
 .contactusTitle {
@@ -204,11 +206,13 @@
 	font-size: 26px;
 	font-weight: bold;
 	margin-top:85px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .contactusChinese {
 	color: #e95504;
 	font-size: 24px;
 	font-weight: bold;
+	margin-top:-20px;
 }
 .contactusContent{
 	margin-top:40px;
@@ -225,18 +229,19 @@
 /* ##############   Link Us   ##############*/
 .linkusContainer {
 	margin-bottom: 85px;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .linkusTitle {
 	color: black;
 	font-size: 26px;
 	font-weight: bold;
 	margin-top:25px;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .linkusChinese {
 	color: #e95504;
 	font-size: 24px;
 	font-weight: bold;
+	margin-top:-20px;
 }
 .linkusContent{
 	margin-top:40px;
@@ -257,20 +262,19 @@
 	width:100%;
 	height:170px;
 	background-color: #4d4a49;
-	font-family: "微软雅黑", "Heiti SC", "Arial";
 	color:white;
 	font-size:14px;
-/*    position:fixed;
-    bottom:0;
-    _position:absolute;
-    _margin-top:expression(this.style.pixelHeight+document.documentElement.scrollTop);*/
+	line-height: 14px;
 }
 .bottom-content {
-	margin-top: 40px;
+	margin-top: 10px;
 }
 .bottom-copyright {
-	margin-top:98px;
+	margin-top:44px;
 }
 .bottom-code {
-	margin-top:9px;
+	margin-top:36px;
+}
+.bottom-logo {
+	margin-top:36px;
 }
