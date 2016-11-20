@@ -25,7 +25,7 @@
 	margin-right:8px;
 }
 .brand-image {
-	width: 430px;
+	width: 390px;
     height:auto;
 }
 .hrClass {
@@ -33,7 +33,9 @@
 	border:none;
 	border-top:1px solid #bbbbbb;
 }
-
+.custom-navbar-chineseenglish {
+	font-size:15px;
+}
 
 
 
