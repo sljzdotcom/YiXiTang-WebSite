@@ -12,13 +12,13 @@
     <title>伊禧堂</title>
     <meta name="description" content="伊禧堂,青海伊禧堂生物科技有限公司创建于2005年,是在原青海省青海湖药业有限公司植物提取业务板块的基础上,引入战略投资者、核心专利技术而组建的民营高科技企业。" />
     <meta name="keywords" content="伊禧堂,青海伊禧堂生物科技有限公司,青海,生物,科技" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
 
     <link href="css/main.css" rel="stylesheet">
     <script src="js/main.js"></script>
-    <link rel="shortcut icon" href="images/favicon.ico" />
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +33,11 @@
 
     <!-- Swiper 3.4.0 -->
     <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+
+    <!-- zeroModal -->
+    <script src="js/jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="css/zeroModal.css">
+    <script src="js/zeroModal.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -307,30 +312,55 @@
     </div>
 
     <!-- Contact Us  ============================ -->
+    <a id="contactusID"></a>
     <div class="container-fluid contactusContainer">
         <div class="container">
             <p class="text-center contactusTitle">CONTACT US</p>
             <div class="text-center">
                 <div class="row">
-                    <!--<div class="col-xs-1"></div>-->
                     <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
                     <div class="col-md-2 col-xs-6"><p class="text-center contactusChinese">联系我们</p></div>
                     <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                    <!--<div class="col-xs-1"></div>-->
                 </div>
             </div>
             <div class="row contactusContent">
-                <!--<div class="col-md-1 col-xs-2"></div>-->
                 <div class="col-xs-12 text-center contactus">
-                    <a href="#"><img src="images/b1.png" /></a>
-                    <a href="#"><img src="images/b2.png" /></a>
-                    <a href="#"><img src="images/b3.png" /></a>
-                    <a href="#"><img src="images/b4.png" /></a>
+                    <a href="#contactusID" data-am-modal="{target: '#my-popup'}"><img src="images/b1.png" /></a>
+                    <a href="javascript:_iframe()"><img src="images/b2.png" /></a>
+                    <a href="#contactusID"><img src="images/b3.png" /></a>
+                    <a href="#contactusID"><img src="images/b4.png" /></a>
+
+                    <div class="am-popup" id="my-popup">
+                        <div class="am-popup-inner">
+                            <div class="am-popup-hd">
+                                <h4 class="am-popup-title">我是一个简介</h4>
+                                <span data-am-modal-close class="am-close">&times;</span>
+                            </div>
+                            <div class="am-popup-bd">
+                                这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                                这是第一种方式这是第一种方式
+                                <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                            </div>
+                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                            这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                            这是第一种方式这是第一种方式
+                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                            这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                            这是第一种方式这是第一种方式
+                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                            这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                            这是第一种方式这是第一种方式
+                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                        </div>
+                    </div>
+
+
                 </div>
-                <!--<div class="col-md-1 col-xs-2"></div>-->
             </div>
         </div>
     </div>
+
+
 
     <!-- Link Us  ============================ -->
     <div class="container linkusContainer">
@@ -419,6 +449,11 @@
             autoplay : 5000,
             spaceBetween: 30
         });
+    </script>
+
+    <!-- Initialize zeroModal -->
+    <script>
+
     </script>
 
 </body>

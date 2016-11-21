@@ -8,6 +8,7 @@ window.onload = function()
 
 }
 
+//============  stickmenu  ============
 function getScoll() {
     var viewH = ScollPostion().top;
     if (viewH>86) {
@@ -19,7 +20,9 @@ function getScoll() {
     }
 }
 
-function ScollPostion() {//滚动条位置
+
+//============  判断页面滚动条所处位置  ============
+function ScollPostion() {
     var t, l, w, h;
     if (document.documentElement && document.documentElement.scrollTop) {
         t = document.documentElement.scrollTop;
@@ -33,4 +36,17 @@ function ScollPostion() {//滚动条位置
         h = document.body.scrollHeight;
     }
     return { top: t, left: l, width: w, height: h };
+}
+
+
+//============  定义 zeroModal  ============
+function _iframe() {
+    zeroModal.show({
+        title: '第二种方式，可以调取任意页面！',
+        iframe: true,
+        url: 'http://www.baidu.com',
+        width: '80%',
+        height: '80%',
+        cancel: true
+    });
 }

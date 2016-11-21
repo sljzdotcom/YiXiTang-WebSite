@@ -225,8 +225,11 @@
 	margin-right:6%;
 	margin-left:6%;
 }
-
-
+.contactus a:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-webkit-transition: opacity 0.5s linear;
+}
 
 /* ##############   Link Us   ##############*/
 .linkusContainer {
@@ -286,3 +289,4 @@
 	line-height:18px;
 	font-size:13px;
 }
+
