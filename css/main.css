@@ -177,7 +177,29 @@
 	width: 236px;
 	height:236px;
 	float:left;
+	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
+.productItem2 div:hover {
+	text-shadow:-2px 0 #fff,    /*向左阴影*/
+	0 -1px #fff,    /*向上阴影*/
+	1px 0 #5f5f5f,     /*向右阴影*/
+	0 1px #5f5f5f;     /*向下阴影*/
+}
+.productItem2Title {
+	color:red;
+	font-size:28px;
+	line-height:28px;
+	font-weight:bold;
+
+	margin-top:70px;
+}
+.productItem2Text {
+	color: #353535;
+	font-size:16px;
+	line-height:18px;
+	margin:20px;
+}
+.productItem2Text
 
 /* ##############   News   ##############*/
 .newsContainer {
@@ -292,8 +314,15 @@
 .bottom-logo img {
 	width:85%;
 }
+.bottom-text{
+
+}
 .bottom-text p {
 	line-height:18px;
 	font-size:13px;
+	margin-left:218px;
+}
+.bottom-text h2 {
+	margin-left:218px;
 }
 
