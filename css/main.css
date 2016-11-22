@@ -27,32 +27,74 @@
 .brand-image {
 	width: 390px;
     height:auto;
+	margin-top:20px;
 }
 .hrClass {
 	height:1px;
 	border:none;
 	border-top:1px solid #bbbbbb;
 }
-.custom-navbar-chineseenglish {
-	font-size:15px;
+.hrClassText {
+	height: 35px;
+	width: 110px;
+	position: relative;
+	left: 45%;
+	top: -34px;
+	color: #BE9C59;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: white;
 }
 
 
+/* ##############   Navbar   ##############*/
+.navbarContainer {
+	margin: 0 auto;
+	width:90%;
+}
+.custom-navbar-chineseenglish {
+	font-size:12px;
+}
+.custom-navbar-chineseenglish a:link {color: #000;text-decoration: none;}
+.custom-navbar-chineseenglish a:visited {color:#000;text-decoration: none;}
+.custom-navbar-chineseenglish a:hover {color: #74523a;text-decoration: none;}
+.custom-navbar-chineseenglish a:active {color:#000;}
+
+.navbar-search {
+	width:181px;
+	height:30px;
+	background: url('../images/search-back.jpg') no-repeat;
+	position:relative;
+}
+.navbar-search img {
+	position:absolute;
+	margin-left:-1px;
+	margin-top:4px;
+}
+.searchTextbox {
+	border:0;
+	width:100px;
+	margin-left:33px;
+	font-size:13px;
+	line-height:13px;
+}
 
 /* ##############   Stickmenu（初始样式）   ##############*/
 .stickmenu {
-	background: rgba(255, 255, 255, 0.5) !important;
+	background: rgba(255, 255, 255, 0.6) !important;
 	filter:Alpha(opacity=90);
 	width:100%;
-	height:40px;
+	height:50px;
 	z-index: 9999999;
 	position: absolute;
+	margin-top:-12px;
+
 }
 .stickmenuitem {
-	font-size: 16px;
-	line-height: 40px;
+	font-size: 17px;
+	line-height: 50px;
 	color:black;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	/*font-family: "微软雅黑", "Heiti SC", "Arial";*/
 }
 /*20161121 注释掉原先效果，修改成只文字变色*/
@@ -72,15 +114,15 @@
 	background: rgba(36, 36, 36, 0.5) !important;
 	filter:Alpha(opacity=90);
 	width:100%;
-	height:40px;
+	height:50px;
 	z-index: 9999999;
 	position: absolute;
 }
 .stickmenuNew div {
-	font-size: 16px;
-	line-height: 40px;
+	font-size: 17px;
+	line-height: 50px;
 	color:white;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	/*font-family: "微软雅黑", "Heiti SC", "Arial";*/
 }
 /*20161121 注释掉原先效果，修改成只文字变色*/
@@ -108,16 +150,14 @@
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .aboutusChinese {
-	color: #e95504;
+	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:-20px;
 }
 .aboutusContent {
 	margin-top:40px;
-	font-size:18px;
-	margin-left:25px;
-	margin-right:25px;
+	font-size:16px;
 }
 
 
@@ -135,7 +175,7 @@
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .productChinese {
-	color: #e95504;
+	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:-20px;
@@ -144,6 +184,8 @@
 	margin-top:40px;
 	margin-bottom: 85px;
 	font-size:18px;
+	position: relative;
+	z-index:1;
 }
 .productDetail {
 	float:left;
@@ -154,9 +196,10 @@
 .productItem1 {
 	position: relative;
 	overflow: hidden;
-	width: 236px;
-	height:236px;
+	width: 284px;
+	height:284px;
 	float:left;
+	z-index: 10;
 }
 .productItem1 img {
 	max-width: 100%;
@@ -174,43 +217,65 @@
 	display:block;
 	background-color: white;
 	overflow: hidden;
-	width: 236px;
-	height:236px;
+	width: 284px;
+	height:284px;
 	float:left;
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
+.productItem2SmallArrow1{
+	position:absolute;
+	margin-left:264px;
+	margin-top:130px;
+	z-index:999;
+}
+.productItem2SmallArrow2{
+	position:absolute;
+	margin-left:832px;
+	margin-top:130px;
+	z-index:999;
+}
+.productItem2SmallArrow3{
+	position:absolute;
+	margin-left:284px;
+	margin-top:130px;
+	z-index:999;
+}
+.productItem2SmallArrow4{
+	position:absolute;
+	margin-left:852px;
+	margin-top:130px;
+	z-index:999;
+}
 .productItem2:hover {
 	cursor:pointer;
-	text-shadow:
-		-1px 0 #fff,    /*向左阴影*/
-		0 -1px #fff,    /*向上阴影*/
-		1px 0 #979797,     /*向右阴影*/
-		0 1px #979797     /*向下阴影*/
-	;
 }
 .productItem2Arrow {
-	margin-top:-5px;
+	margin-top:45px;
 	color:#74523a;
 	display:none;
 }
 .productItem2Title {
 	color:red;
-	font-size:28px;
+	font-size:24px;
 	line-height:28px;
 	font-weight:bold;
-	margin-top:50px;
+	margin-top:80px;
+	-webkit-transition: margin 0.5s ease-out;
+	-moz-transition: margin 0.5s ease-out;
+	-khtml-transition: margin 0.5s ease-out;
 }
 .productItem2Text {
 	color: #353535;
-	font-size:16px;
+	font-size:14px;
 	line-height:18px;
 	margin:20px;
 }
-.productItem2Text
+
+
 
 /* ##############   News   ##############*/
 .newsContainer {
-	margin-bottom: 85px;
+
 }
 .news {
 	color: black;
@@ -220,7 +285,7 @@
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .newsChinese {
-	color: #e95504;
+	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:-20px;
@@ -229,8 +294,7 @@
 	margin-top:40px;
 	font-size:18px;
 	line-height:40px;
-	margin-left:18px;
-	margin-right:30px;
+	margin-right:15px;
 }
 
 
@@ -247,7 +311,7 @@
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .contactusChinese {
-	color: #e95504;
+	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:-20px;
@@ -267,6 +331,7 @@
 	-webkit-transition: opacity 0.5s linear;
 }
 
+
 /* ##############   Link Us   ##############*/
 .linkusContainer {
 	margin-bottom: 85px;
@@ -279,7 +344,7 @@
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
 .linkusChinese {
-	color: #e95504;
+	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
 	margin-top:-20px;
@@ -289,10 +354,19 @@
 	margin-bottom: 45px;
 	font-size:18px;
 }
-.linkus img {
+.linkusblock {
+	width:100px;
+	height:100px;
+	background-color: black;
+	float:left;
+}
+.linkusimg {
 	margin-top:10px;
-	margin-right:3%;
-	margin-left:3%;
+	margin-right:92px;
+}
+.linkusimg1 {
+	margin-top:10px;
+	/*margin-right:86px;*/
 }
 
 

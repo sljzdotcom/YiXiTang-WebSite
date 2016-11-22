@@ -51,12 +51,29 @@ function _iframe() {
     });
 }
 
-function setArrow(getShowid) {
-    var show = document.getElementById(getShowid);
-    if (show.style.display=='block') {
-        show.style.display='none';
-    } else {
-        show.style.display='block';
-    }
-    // document.getElementById(getShowid).style.display = 'block';
+function setMouseOver(getShowid) {
+    var no = getShowid;
+
+    var show = 'productItem2Arrow' + no.toString();
+    var Arrow = document.getElementById(show);
+    Arrow.style.display='block';
+
+    var pp = 'productItem2P' + no.toString();
+    var p = document.getElementById(pp);
+    p.style.marginTop = '50px';
+
+}
+
+function setMouseOut(getShowid) {
+    var no = getShowid;
+
+    var show = 'productItem2Arrow' + no.toString();
+    var Arrow = document.getElementById(show);
+    Arrow.style.display='none';
+
+    var pp = 'productItem2P' + no.toString();
+    var p = document.getElementById(pp);
+    p.style.marginTop = '80px';
+    p.addClass('animated fadeInUp');
+
 }

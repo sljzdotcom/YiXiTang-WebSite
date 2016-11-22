@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="css/zeroModal.css">
     <script src="js/zeroModal.min.js"></script>
 
+    <link rel="stylesheet" href="css/animate.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,10 +53,10 @@
 
     <!-- navbar top  ============================ -->
     <div class="container-fluid">
-        <nav class="navbar navbar-default" role="navigation" style="background-color:white;border:0;height:100%;0">
-            <div class="container">
+        <nav class="navbar navbar-default" role="navigation" style="background-color:white;border:0;height:100%;">
+            <div class="navbarContainer">
                 <div class="navbar-header">
-                    <a href="#" class="navbar-brand">
+                    <a href="#">
                         <img alt="Brand" class="brand-image img-responsive" src="images/logo.jpg"  />
                     </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" style="position:absolute;right:1px;">
@@ -64,23 +66,24 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-1" style="margin-top:13px;">
-                    <div>
-                        <p class="navbar-text navbar-left custom-navbar-chineseenglish" style="margin-right:-8px;">
-                            <a href="#">ENGLISH</a>  |
-                            <a href="#">中文版</a>
-                        </p>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search" size="10">
-                            </div>
-                            <button type="submit" class="btn btn-default">
-                                <i class="fa fa-search fa-fw fa-margin"></i>搜索
-                            </button>
-                        </form>
+                <div class="collapse navbar-collapse navbar-right custom-navbar-div" id="navbar-collapse-1">
+                    <div class="navbar-text navbar-left custom-navbar-chineseenglish" style="margin-right:-4px;margin-top:46px;">
+                        <a href="#">ENGLISH</a>  |
+                        <a href="#">中文版</a>
                     </div>
-
-                </div><!-- /.navbar-collapse -->
+                    <form class="navbar-form navbar-right" role="search" style="margin-top:40px;">
+                        <div class="navbar-search">
+                            <input type="text" class="searchTextbox" placeholder="Search" size="10">
+                            <a href="#"><img src="images/search-botton.png" ></a>
+                        </div>
+<!--                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" size="10">
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                            <i class="fa fa-search fa-fw fa-margin"></i>搜索
+                        </button>-->
+                    </form>
+                </div>
             </div>
         </nav>
     </div>
@@ -136,7 +139,7 @@
     </div>
 
     <!-- Carousel  ============================ -->
-    <div class="swiper-container">
+    <div class="swiper-container" style="margin-top:-12px;">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="images/2.jpg" /></div>
             <div class="swiper-slide"><img src="images/3.jpg" /></div>
@@ -186,14 +189,9 @@
 
     <!-- About Us  ============================ -->
     <div class="container aboutusContainer">
-        <p class="text-center aboutus">ABOUT US</p>
-        <div class="text-center">
-            <div class="row">
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                <div class="col-md-2 col-xs-6"><p class="text-center aboutusChinese">关于我们</p></div>
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-            </div>
-        </div>
+        <div class="text-center aboutus">ABOUT US</div>
+        <hr class="hrClass" />
+        <div class="text-center hrClassText">关于我们</div>
         <div class="row">
             <div class="col-xs-12">
                 <p class="aboutusContent">
@@ -211,68 +209,65 @@
     <div class="container-fluid productContainer">
         <div class="container">
             <p class="text-center productTitle">PRODUCTS</p>
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                    <div class="col-md-2 col-xs-6"><p class="text-center productChinese">产品中心</p></div>
-                    <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                </div>
-            </div>
+            <hr class="hrClass" />
+            <div class="text-center hrClassText" style="background-color: #e8eaeb">产品中心</div>
 
             <div class="row productContent">
-                <div class="row">
-                    <div class="col-xs-1 col-sm-1 hidden-md col-lg-1"></div>
-                    <div class="col-xs-10 col-sm-9 col-md-12 col-lg-10">
-                        <div class="productItem1">
-                            <a href="#"><img src="images/a1.png" class="img-responsive" ></a>
-                        </div>
-                        <div class="productItem2" onmouseover="setArrow('productItem2Arrow1')" onmouseout="setArrow('productItem2Arrow1')">
-                            <p class="text-center productItem2Title">甘草系列</p>
-                            <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                            <div class="text-center productItem2Arrow" id="productItem2Arrow1">
-                                <li class="fa fa-hand-o-left fa-2x"></li>
-                                <li class="fa fa-arrow-left fa-2x"></li>
-                                <li class="fa fa-chevron-circle-left fa-2x"></li>
-                            </div>
-                        </div>
-                        <div class="productItem1">
-                            <a href="#"><img src="images/a3.png" class="img-responsive" ></a>
-                        </div>
-                        <div class="productItem2" onmouseover="setArrow('productItem2Arrow2')" onmouseout="setArrow('productItem2Arrow2')">
-                            <p class="text-center productItem2Title">甘草系列</p>
-                            <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                            <div class="text-center productItem2Arrow" id="productItem2Arrow2">
-                                <li class="fa fa-hand-o-left fa-2x"></li>
-                                <li class="fa fa-arrow-left fa-2x"></li>
-                                <li class="fa fa-chevron-circle-left fa-2x"></li>
-                            </div>
-                        </div>
-                        <div class="productItem2" onmouseover="setArrow('productItem2Arrow3')" onmouseout="setArrow('productItem2Arrow3')">
-                            <p class="text-center productItem2Title">甘草系列</p>
-                            <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                            <div class="text-center productItem2Arrow" id="productItem2Arrow3">
-                                <li class="fa fa-hand-o-right fa-2x"></li>
-                                <li class="fa fa-arrow-right fa-2x"></li>
-                                <li class="fa fa-chevron-circle-right fa-2x"></li>
-                            </div>
-                        </div>
-                        <div class="productItem1">
-                            <a href="#"><img src="images/a2.png" class="img-responsive" ></a>
-                        </div>
-                        <div class="productItem2" onmouseover="setArrow('productItem2Arrow4')" onmouseout="setArrow('productItem2Arrow4')">
-                            <p class="text-center productItem2Title">甘草系列</p>
-                            <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                            <div class="text-center productItem2Arrow" id="productItem2Arrow4">
-                                <li class="fa fa-hand-o-right fa-2x"></li>
-                                <li class="fa fa-arrow-right fa-2x"></li>
-                                <li class="fa fa-chevron-circle-right fa-2x"></li>
-                            </div>
-                        </div>
-                        <div class="productItem1">
-                            <a href="#"><img src="images/a4.png" class="img-responsive" ></a>
+                <div class="col-xs-12">
+                    <!-- 1st image -->
+                    <div class="productItem1">
+                        <a href="#"><img src="images/11.png" class="img-responsive" ></a>
+                    </div>
+                    <div class="productItem2SmallArrow1 hidden-md"><img src="images/arrow.png" ></div>
+                    <!-- 1st image text -->
+                    <div class="productItem2" onmouseover="setMouseOver('1')" onmouseout="setMouseOut('1')">
+                        <p class="text-center productItem2Title" id="productItem2P1">甘草系列</p>
+                        <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
+                        <div class="text-center productItem2Arrow animated bounceInRight" id="productItem2Arrow1">
+                            <img src="images/arrow-left.png" >
                         </div>
                     </div>
-                    <div class="col-xs-1 col-sm-2 hidden-md col-lg-1"></div>
+                    <!-- 2nd image -->
+                    <div class="productItem1">
+                        <a href="#"><img src="images/22.png" class="img-responsive" ></a>
+                    </div>
+                    <div class="productItem2SmallArrow2 hidden-md"><img src="images/arrow.png" ></div>
+                    <!-- 2nd image text -->
+                    <div class="productItem2" onmouseover="setMouseOver('2')" onmouseout="setMouseOut('2')">
+                        <p class="text-center productItem2Title" id="productItem2P2">健康产品系列</p>
+                        <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
+                        <div class="text-center productItem2Arrow animated bounceInRight" id="productItem2Arrow2">
+                            <img src="images/arrow-left.png" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <!-- 3rd image text -->
+                    <div class="productItem2" onmouseover="setMouseOver('3')" onmouseout="setMouseOut('3')">
+                        <p class="text-center productItem2Title" id="productItem2P3">原料药</p>
+                        <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
+                        <div class="text-center productItem2Arrow animated bounceInLeft" id="productItem2Arrow3">
+                            <img src="images/arrow-right.png" >
+                        </div>
+                    </div>
+                    <!-- 3rd image -->
+                    <div class="productItem1">
+                        <a href="#"><img src="images/33.png" class="img-responsive" ></a>
+                    </div>
+                    <div class="productItem2SmallArrow3 hidden-md"><img src="images/arrow2.png" ></div>
+                    <!-- 4th image text -->
+                    <div class="productItem2" onmouseover="setMouseOver('4')" onmouseout="setMouseOut('4')">
+                        <p class="text-center productItem2Title" id="productItem2P4">中药饮片系列</p>
+                        <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
+                        <div class="text-center productItem2Arrow animated bounceInLeft" id="productItem2Arrow4">
+                            <img src="images/arrow-right.png" >
+                        </div>
+                    </div>
+                    <!-- 4th image -->
+                    <div class="productItem1">
+                        <a href="#"><img src="images/44.png" class="img-responsive" ></a>
+                    </div>
+                    <div class="productItem2SmallArrow4 hidden-md"><img src="images/arrow2.png" ></div>
                 </div>
             </div>
         </div>
@@ -281,13 +276,8 @@
     <!-- News  ============================ -->
     <div class="container newsContainer">
         <p class="text-center news">NEWS CENTER</p>
-        <div class="text-center">
-            <div class="row">
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                <div class="col-md-2 col-xs-6"><p class="text-center newsChinese">新闻中心</p></div>
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-            </div>
-        </div>
+        <hr class="hrClass" />
+        <div class="text-center hrClassText">新闻中心</div>
         <div class="row">
             <div class="col-md-6 col-xs-12">
                 <div class="newsContent text-left">
@@ -299,19 +289,18 @@
                         <li>中超回购热潮仍未结束 多名留洋球员已被关注</li>
                         <li>女足奥运功臣提名亚洲足球小姐</li>
                         <li>8成海归球员难觅出场机会</li>
-                        <li>中超回购热潮仍未结束 多名留洋球员已被关注</li>
                         <li>女足奥运功臣提名亚洲足球小姐</li>
-                        <li>8成海归球员难觅出场机会</li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12">
-                <p class="newsContent embed-responsive embed-responsive-4by3 text-right">
-                    <!--<iframe class="embed-responsive-item" src="http://player.youku.com/embed/XMTgxODk3ODIyNA=="></iframe>-->
-                    <embed src='http://player.youku.com/player.php/sid/XMTgxODk3ODIyNA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+                <p class="newsContent embed-responsive embed-responsive-16by9 text-right">
+                    <iframe class="embed-responsive-item" src="images/01.mp4"></iframe>
+                    <!--<embed src='http://player.youku.com/player.php/sid/XMTgxODk3ODIyNA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>-->
                 </p>
             </div>
         </div>
+        <div style="margin-top:85px;"></div>
     </div>
 
     <!-- Contact Us  ============================ -->
@@ -319,71 +308,65 @@
     <div class="container-fluid contactusContainer">
         <div class="container">
             <p class="text-center contactusTitle">CONTACT US</p>
-            <div class="text-center">
-                <div class="row">
-                    <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                    <div class="col-md-2 col-xs-6"><p class="text-center contactusChinese">联系我们</p></div>
-                    <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                </div>
-            </div>
+            <hr class="hrClass" />
+            <div class="text-center hrClassText" style="background-color: #e8eaeb">联系我们</div>
             <div class="row contactusContent">
-                <div class="col-xs-12 text-center contactus">
-                    <a href="#contactusID" data-am-modal="{target: '#my-popup'}"><img src="images/b1.png" /></a>
-                    <a href="javascript:_iframe()"><img src="images/b2.png" /></a>
-                    <a href="#contactusID"><img src="images/b3.png" /></a>
-                    <a href="#contactusID"><img src="images/b4.png" /></a>
-
-                    <div class="am-popup" id="my-popup">
-                        <div class="am-popup-inner">
-                            <div class="am-popup-hd">
-                                <h4 class="am-popup-title">我是一个简介</h4>
-                                <span data-am-modal-close class="am-close">&times;</span>
-                            </div>
-                            <div class="am-popup-bd">
-                                这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
-                                这是第一种方式这是第一种方式
-                                <p>这是第一种方式这是第一种方式这是第一种方式</p>
-                            </div>
-                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
-                            这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
-                            这是第一种方式这是第一种方式
-                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
-                            这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
-                            这是第一种方式这是第一种方式
-                            <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                <div class="row">
+                    <div class="col-xs-3 text-left">
+                        <a href="#contactusID" data-am-modal="{target: '#my-popup'}"><img src="images/b1.png" style="margin-left:50px;" /></a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="javascript:_iframe()"><img src="images/b2.png" style="margin-right:10px;"/></a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="#contactusID"><img src="images/b3.png" style="margin-left:10px;" /></a>
+                    </div>
+                    <div class="col-xs-3 text-right">
+                        <a href="#contactusID"><img src="images/b4.png"  style="margin-right:50px;"/></a>
+                    </div>
+                </div>
+                <div class="am-popup" id="my-popup">
+                    <div class="am-popup-inner">
+                        <div class="am-popup-hd">
+                            <h4 class="am-popup-title">我是一个简介</h4>
+                            <span data-am-modal-close class="am-close">&times;</span>
+                        </div>
+                        <div class="am-popup-bd">
                             这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
                             这是第一种方式这是第一种方式
                             <p>这是第一种方式这是第一种方式这是第一种方式</p>
                         </div>
+                        <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                        这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                        这是第一种方式这是第一种方式
+                        <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                        这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                        这是第一种方式这是第一种方式
+                        <p>这是第一种方式这是第一种方式这是第一种方式</p>
+                        这是第一种方式这是第一种方式这是第一种方式,这是第一种方式<br />
+                        这是第一种方式这是第一种方式
+                        <p>这是第一种方式这是第一种方式这是第一种方式</p>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <!-- Link Us  ============================ -->
     <div class="container linkusContainer">
         <p class="text-center linkusTitle">LINK US</p>
-        <div class="text-center">
-            <div class="row">
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-                <div class="col-md-2 col-xs-6"><p class="text-center linkusChinese">友情链接</p></div>
-                <div class="col-md-5 col-xs-3"><hr class="hrClass" /></div>
-            </div>
-        </div>
-        <div class="row linkusContent">
-            <div class="col-xs-12 text-center linkus">
-                <a href="#"><img src="images/link1.png" /></a>
-                <a href="#"><img src="images/link2.png" /></a>
-                <a href="#"><img src="images/link3.png" /></a>
-                <a href="#"><img src="images/link4.png" /></a>
-                <a href="#"><img src="images/link5.png" /></a>
-                <a href="#"><img src="images/link6.png" /></a>
-                <a href="#"><img src="images/link7.png" /></a>
+        <hr class="hrClass" />
+        <div class="text-center hrClassText">友情链接</div>
+        <div class="linkusContent">
+            <div class="linkus">
+                <a href="#"><img src="images/link1.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link2.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link3.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link4.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link5.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link6.png" class="linkusimg" /></a>
+                <a href="#"><img src="images/link7.png" class="linkusimg"/></a>
+                <a href="#"><img src="images/link2.png" class="linkusimg1" /></a>
             </div>
         </div>
     </div>
