@@ -50,3 +50,13 @@ function _iframe() {
         cancel: true
     });
 }
+
+function setArrow(getShowid) {
+    var show = document.getElementById(getShowid);
+    if (show.style.display=='block') {
+        show.style.display='none';
+    } else {
+        show.style.display='block';
+    }
+    // document.getElementById(getShowid).style.display = 'block';
+}

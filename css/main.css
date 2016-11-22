@@ -179,19 +179,26 @@
 	float:left;
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
-.productItem2 p:hover {
-	text-shadow:-2px 0 #fff,    /*向左阴影*/
-	0 -1px #fff,    /*向上阴影*/
-	1px 0 #5f5f5f,     /*向右阴影*/
-	0 1px #5f5f5f;     /*向下阴影*/
+.productItem2:hover {
+	cursor:pointer;
+	text-shadow:
+		-1px 0 #fff,    /*向左阴影*/
+		0 -1px #fff,    /*向上阴影*/
+		1px 0 #979797,     /*向右阴影*/
+		0 1px #979797     /*向下阴影*/
+	;
+}
+.productItem2Arrow {
+	margin-top:-5px;
+	color:#74523a;
+	display:none;
 }
 .productItem2Title {
 	color:red;
 	font-size:28px;
 	line-height:28px;
 	font-weight:bold;
-
-	margin-top:70px;
+	margin-top:50px;
 }
 .productItem2Text {
 	color: #353535;
