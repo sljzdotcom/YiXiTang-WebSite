@@ -179,7 +179,7 @@
 	float:left;
 	font-family: "微软雅黑", "Heiti SC", "Arial";
 }
-.productItem2 div:hover {
+.productItem2 p:hover {
 	text-shadow:-2px 0 #fff,    /*向左阴影*/
 	0 -1px #fff,    /*向上阴影*/
 	1px 0 #5f5f5f,     /*向右阴影*/
