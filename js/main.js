@@ -51,6 +51,7 @@ function _iframe() {
     });
 }
 
+//============  定义 产品中心的箭头显示  ============
 function setMouseOver(getShowid) {
     var no = getShowid;
 
@@ -63,7 +64,7 @@ function setMouseOver(getShowid) {
     p.style.marginTop = '50px';
 
 }
-
+//============  定义 产品中心的箭头隐藏  ============
 function setMouseOut(getShowid) {
     var no = getShowid;
 
@@ -76,4 +77,19 @@ function setMouseOut(getShowid) {
     p.style.marginTop = '80px';
     p.addClass('animated fadeInUp');
 
+}
+
+//============  定义 轮播图片的箭头显示  ============
+function setSwiperIn() {
+    var prev = document.getElementById('swiper-button-prev');
+    prev.style.display = 'inline';
+    var next = document.getElementById('swiper-button-next');
+    next.style.display = 'inline';
+}
+//============  定义 轮播图片的箭头隐藏  ============
+function setSwiperOut() {
+    var prev = document.getElementById('swiper-button-prev');
+    prev.style.display = 'none';
+    var next = document.getElementById('swiper-button-next');
+    next.style.display = 'none';
 }

@@ -17,6 +17,7 @@
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
 
+    <!-- Custom settings by Miller -->
     <link href="css/main.css" rel="stylesheet">
     <script src="js/main.js"></script>
 
@@ -39,6 +40,7 @@
     <link rel="stylesheet" href="css/zeroModal.css">
     <script src="js/zeroModal.min.js"></script>
 
+    <!-- animate -->
     <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -139,8 +141,8 @@
     </div>
 
     <!-- Carousel  ============================ -->
-    <div class="swiper-container" style="margin-top:-12px;">
-        <div class="swiper-wrapper">
+    <div class="swiper-container" onmouseover="setSwiperIn()" onmouseout="setSwiperOut()" style="margin-top:-12px;">
+        <div class="swiper-wrapper" >
             <div class="swiper-slide"><img src="images/2.jpg" /></div>
             <div class="swiper-slide"><img src="images/3.jpg" /></div>
             <div class="swiper-slide"><img src="images/4.jpg" /></div>
@@ -149,8 +151,8 @@
         <div class="swiper-pagination"></div>
 
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white" id="swiper-button-prev"></div>
+        <div class="swiper-button-next swiper-button-white" id="swiper-button-next"></div>
 
         <!-- 如果需要滚动条 -->
         <div class="swiper-scrollbar"></div>
@@ -224,7 +226,7 @@
                         <p class="text-center productItem2Title" id="productItem2P1">甘草系列</p>
                         <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
                         <div class="text-center productItem2Arrow animated bounceInRight" id="productItem2Arrow1">
-                            <img src="images/arrow-left.png" >
+                            <li class="fa fa-arrow-left" ></li>
                         </div>
                     </div>
                     <!-- 2nd image -->
@@ -236,8 +238,9 @@
                     <div class="productItem2" onmouseover="setMouseOver('2')" onmouseout="setMouseOut('2')">
                         <p class="text-center productItem2Title" id="productItem2P2">健康产品系列</p>
                         <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                        <div class="text-center productItem2Arrow animated bounceInRight" id="productItem2Arrow2">
-                            <img src="images/arrow-left.png" >
+                        <div class="text-center productItem2Arrow animated slideInRight" id="productItem2Arrow2">
+                            <!--<img src="images/arrow-left.png" >-->
+                            <li class="fa fa-arrow-left" ></li>
                         </div>
                     </div>
                 </div>
@@ -246,8 +249,9 @@
                     <div class="productItem2" onmouseover="setMouseOver('3')" onmouseout="setMouseOut('3')">
                         <p class="text-center productItem2Title" id="productItem2P3">原料药</p>
                         <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
-                        <div class="text-center productItem2Arrow animated bounceInLeft" id="productItem2Arrow3">
-                            <img src="images/arrow-right.png" >
+                        <div class="text-center productItem2Arrow animated slideInLeft" id="productItem2Arrow3">
+                            <!--<img src="images/arrow-right.png" >-->
+                            <li class="fa fa-arrow-right" ></li>
                         </div>
                     </div>
                     <!-- 3rd image -->
@@ -260,7 +264,8 @@
                         <p class="text-center productItem2Title" id="productItem2P4">中药饮片系列</p>
                         <div class="text-centre productItem2Text">甘草系列的简介，我是简介甘草系列的简介，草系草系我是简介甘草系列的简介，我是简介</div>
                         <div class="text-center productItem2Arrow animated bounceInLeft" id="productItem2Arrow4">
-                            <img src="images/arrow-right.png" >
+                            <!--<img src="images/arrow-right.png" >-->
+                            <li class="fa fa-arrow-right" ></li>
                         </div>
                     </div>
                     <!-- 4th image -->
@@ -290,6 +295,7 @@
                         <li>女足奥运功臣提名亚洲足球小姐</li>
                         <li>8成海归球员难觅出场机会</li>
                         <li>女足奥运功臣提名亚洲足球小姐</li>
+                        <li><span class="label label-success"><i class="fa fa-fire"></i></span> 米卢：中国足球可以成功 盼举办世界杯梦想成真</li>
                     </ul>
                 </div>
             </div>
@@ -354,20 +360,17 @@
 
     <!-- Link Us  ============================ -->
     <div class="container linkusContainer">
-        <p class="text-center linkusTitle">LINK US</p>
+        <p class="text-center linkusTitle">Product Certifications</p>
         <hr class="hrClass" />
-        <div class="text-center hrClassText">友情链接</div>
-        <div class="linkusContent">
-            <div class="linkus">
-                <a href="#"><img src="images/link1.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link2.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link3.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link4.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link5.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link6.png" class="linkusimg" /></a>
-                <a href="#"><img src="images/link7.png" class="linkusimg"/></a>
-                <a href="#"><img src="images/link2.png" class="linkusimg1" /></a>
-            </div>
+        <div class="text-center hrClassText">产品资质</div>
+        <div class="linkusContent text-center">
+            <a href="#"><img src="images/link1.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link2.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link3.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link4.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link5.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link6.png" class="linkusimg" /></a>
+            <a href="#"><img src="images/link7.png" class="linkusimg"/></a>
         </div>
     </div>
 
@@ -381,9 +384,11 @@
                 </div>
                 <div class="col-xs-12 col-md-6 bottom-text">
                     <p><h2>青海省青海湖药业有限公司</h2></p>
-                    <p><br />
-                        总公司地址：青海省西宁市西关大街46号纺织品大厦17楼<br />
+                    <p>
+                        总公司地址：中国青海省西宁市西关大街46号纺织品大厦17楼<br />
                         总公司电话：+86 971 5366171<br />
+                        上海营销中心：上海市杨浦区四平路1063号中天大厦1808室<br />
+                        广州营销中心：广州市杨箕大街31号3504房<br />
                         企业邮箱：XXX@aaa.com
                     </p>
                 </div>

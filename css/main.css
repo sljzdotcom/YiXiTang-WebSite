@@ -36,15 +36,18 @@
 }
 .hrClassText {
 	height: 35px;
-	width: 110px;
+	width:100px;
+	margin:0 auto;
 	position: relative;
-	left: 45%;
+	display:block;
 	top: -34px;
 	color: #BE9C59;
 	font-size: 22px;
 	font-weight: bold;
-	background-color: white;
+	background-color: #fff;
 }
+.swiper-button-prev {display:none;}
+.swiper-button-next {display:none;}
 
 
 /* ##############   Navbar   ##############*/
@@ -157,7 +160,7 @@
 }
 .aboutusContent {
 	margin-top:40px;
-	font-size:16px;
+	font-size:14px;
 }
 
 
@@ -208,9 +211,9 @@
 	transition: all 0.3s;
 }
 .productItem1:hover img {
-	-moz-transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .productItem2 {
 	position: relative;
@@ -292,8 +295,8 @@
 }
 .newsContent{
 	margin-top:40px;
-	font-size:18px;
-	line-height:40px;
+	font-size:14px;
+	line-height:32px;
 	margin-right:15px;
 }
 
@@ -354,19 +357,10 @@
 	margin-bottom: 45px;
 	font-size:18px;
 }
-.linkusblock {
-	width:100px;
-	height:100px;
-	background-color: black;
-	float:left;
-}
 .linkusimg {
 	margin-top:10px;
-	margin-right:92px;
-}
-.linkusimg1 {
-	margin-top:10px;
-	/*margin-right:86px;*/
+	margin-left:50px;
+	margin-right:50px;
 }
 
 
@@ -399,11 +393,11 @@
 
 }
 .bottom-text p {
-	line-height:18px;
+	line-height:17px;
 	font-size:13px;
-	margin-left:218px;
+	margin-left:197px;
 }
 .bottom-text h2 {
-	margin-left:218px;
+	margin-left:197px;
 }
 
