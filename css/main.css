@@ -465,9 +465,10 @@
 	background-color:transparent;
 	margin-top:84px;
 }
+.enterpriceimage img {width:37%;}
 .enterprice2Text {
-	line-height:16px;
-	font-size:16px;
+	line-height:14px;
+	font-size:14px;
 	font-weight:bold;
 }
 
@@ -475,23 +476,23 @@
 
 .enterprice3Text {}
 .enterprice3Text li {
-	width:23%;
+	width:20%;
 	display:block;
 	float:left;
-	margin-right:20px;
+	margin-right:25px;
 	border-radius: 15px;
-	height:150px;
+	height:120px;
 }
 .enterprice3YesText {
 	background-color: #BD9F53;
-	font-size:24px;
+	font-size:17px;
 	color:white;
-	line-height:30px;
+	line-height:20px;
 	/*font-weight:bold;*/
 }
 .enterprice3NoText {
 	background-color: #E3DDD0;
 }
-.middle-box{display: table; height: 150px; border:0; width:100%; margin:0 auto; position:relative;}
+.middle-box{display: table; height: 135px; border:0; width:100%; margin:0 auto; position:relative;}
 .middle-inner{display: table-cell; vertical-align:middle; *position:absolute; *top:50%; *left:50%; width:100%; text-align:center;}
 .middle-inner p{position:relative; *top:-50%; *left:-50%;}
