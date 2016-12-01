@@ -401,3 +401,97 @@
 	margin-left:197px;
 }
 
+
+
+
+
+
+
+/* #########################################   二级页面   #########################################*/
+
+
+/* ##############   中间大图   ##############*/
+.sectionBigPic {
+	width:100%;
+	height:450px;
+	background-size: 100%;
+	margin-top:-12px;
+}
+
+.custom-container {
+	width:100%;
+	background-color: white;
+	margin-top:3em;
+	margin-bottom:3em;
+  }
+
+.custom-container li {
+	width:20%;
+	display:block;
+	float:left;
+}
+.custom-container img {
+	width:43%;
+}
+
+
+/* ##############   中间内容   ##############*/
+.TextContainer{
+	width:100%;
+	background-color: #ECECEC;
+	font-size:14px;
+}
+
+.TextContainerLogo {
+	width:350px;
+	margin-bottom:54px;
+}
+
+.TextContainerContent {
+	width:100%;
+	height:100%;
+	margin-bottom:84px;
+}
+.TextContainerContent li {
+	width:25%;
+	display:block;
+	float:left;
+}
+.containerBanner {
+	margin-top:84px;
+	margin-bottom:84px;
+}
+.custom-iframe {
+	background-color:transparent;
+	margin-top:84px;
+}
+.enterprice2Text {
+	line-height:16px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+
+
+.enterprice3Text {}
+.enterprice3Text li {
+	width:23%;
+	display:block;
+	float:left;
+	margin-right:20px;
+	border-radius: 15px;
+	height:150px;
+}
+.enterprice3YesText {
+	background-color: #BD9F53;
+	font-size:24px;
+	color:white;
+	line-height:30px;
+	/*font-weight:bold;*/
+}
+.enterprice3NoText {
+	background-color: #E3DDD0;
+}
+.middle-box{display: table; height: 150px; border:0; width:100%; margin:0 auto; position:relative;}
+.middle-inner{display: table-cell; vertical-align:middle; *position:absolute; *top:50%; *left:50%; width:100%; text-align:center;}
+.middle-inner p{position:relative; *top:-50%; *left:-50%;}

@@ -4,8 +4,26 @@
 
 window.onload = function()
 {
-
-
+    var PageName = GetPageurl()[0].toString().split(".")[0].toString();
+    var obj = document.getElementById('sectionBigPic');
+    switch(PageName)
+    {
+        case 'enterprice':
+            obj.style.background="url(images/enterprice-1.png) no-repeat";
+            break;
+        case 'product':
+            obj.style.background="url(images/product-1.png) no-repeat";
+            break;
+        case 'news':
+            obj.style.background="url(images/news-1.png) no-repeat";
+            break;
+        case 'contact':
+            obj.style.background="url(images/contact-1.png) no-repeat";
+            break;
+        default:
+            obj.style.background="url(images/enterprice-1.png) no-repeat";
+    }
+    obj.style.backgroundSize="cover";
 }
 
 //============  stickmenu  ============
@@ -92,4 +110,114 @@ function setSwiperOut() {
     prev.style.display = 'none';
     var next = document.getElementById('swiper-button-next');
     next.style.display = 'none';
+}
+
+
+//============  定义 获取页面文件名和参数   ============
+function GetPageurl() {
+    var url=window.location.href;//获取完整URL地址
+    var tmp= new Array();//临时变量，用于保存分割字符串
+    tmp=url.split("/");//按照"/"分割
+    var cc = tmp[tmp.length-1];//获取最后一部分，即文件名和参数
+    tmp=cc.split("?");//把参数和文件名分割开
+    return tmp;//返回值
+}
+
+
+function switchSection(getID) {
+    var switchid = getID.toString();
+    switch(switchid)
+    {
+        case '1':
+            //企业介绍
+            document.getElementById('switchImage1').src="images/tt1-2.png";
+            document.getElementById('switchImage1').onmouseout = null;
+            document.getElementById('switchImage2').src="images/tt2-1.png";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt2-2.png'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt2-1.png'};
+            document.getElementById('switchImage3').src="images/tt3-1.png";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt3-2.png'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt3-1.png'};
+            document.getElementById('switchImage4').src="images/tt4-1.png";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt4-2.png'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt4-1.png'};
+            document.getElementById('switchImage5').src="images/tt5-1.png";
+            document.getElementById('switchImage5').onmouseover = function(){this.src='images/tt5-2.png'};
+            document.getElementById('switchImage5').onmouseout = function(){this.src='images/tt5-1.png'};
+            break;
+        case '2':
+            //企业文化
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt1-1.png";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt1-2.png'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt1-1.png'};
+            document.getElementById('switchImage2').src="images/tt2-2.png";
+            document.getElementById('switchImage2').onmouseout = null;
+            document.getElementById('switchImage3').src="images/tt3-1.png";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt3-2.png'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt3-1.png'};
+            document.getElementById('switchImage4').src="images/tt4-1.png";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt4-2.png'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt4-1.png'};
+            document.getElementById('switchImage5').src="images/tt5-1.png";
+            document.getElementById('switchImage5').onmouseover = function(){this.src='images/tt5-2.png'};
+            document.getElementById('switchImage5').onmouseout = function(){this.src='images/tt5-1.png'};
+            break;
+        case '3':
+            //企业荣誉
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt1-1.png";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt1-2.png'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt1-1.png'};
+            document.getElementById('switchImage2').src="images/tt2-1.png";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt2-2.png'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt2-1.png'};
+            document.getElementById('switchImage3').src="images/tt3-2.png";
+            document.getElementById('switchImage3').onmouseout = null;
+            document.getElementById('switchImage4').src="images/tt4-1.png";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt4-2.png'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt4-1.png'};
+            document.getElementById('switchImage5').src="images/tt5-1.png";
+            document.getElementById('switchImage5').onmouseover = function(){this.src='images/tt5-2.png'};
+            document.getElementById('switchImage5').onmouseout = function(){this.src='images/tt5-1.png'};
+            break;
+        case '4':
+            //企业发展历程
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt1-1.png";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt1-2.png'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt1-1.png'};
+            document.getElementById('switchImage2').src="images/tt2-1.png";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt2-2.png'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt2-1.png'};
+            document.getElementById('switchImage3').src="images/tt3-1.png";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt3-2.png'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt3-1.png'};
+            document.getElementById('switchImage4').src="images/tt4-2.png";
+            document.getElementById('switchImage4').onmouseout = null;
+            document.getElementById('switchImage5').src="images/tt5-1.png";
+            document.getElementById('switchImage5').onmouseover = function(){this.src='images/tt5-2.png'};
+            document.getElementById('switchImage5').onmouseout = function(){this.src='images/tt5-1.png'};
+            break;
+        case '5':
+            //社会责任
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt1-1.png";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt1-2.png'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt1-1.png'};
+            document.getElementById('switchImage2').src="images/tt2-1.png";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt2-2.png'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt2-1.png'};
+            document.getElementById('switchImage3').src="images/tt3-1.png";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt3-2.png'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt3-1.png'};
+            document.getElementById('switchImage4').src="images/tt4-1.png";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt4-2.png'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt4-1.png'};
+            document.getElementById('switchImage5').src="images/tt5-2.png";
+            document.getElementById('switchImage5').onmouseout = null;
+            break;
+        default:
+
+    }
 }
