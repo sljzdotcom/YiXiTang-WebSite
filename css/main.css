@@ -431,7 +431,7 @@
 	float:left;
 }
 .custom-container img {
-	width:43%;
+	width:40%;
 }
 
 
@@ -496,3 +496,75 @@
 .middle-box{display: table; height: 135px; border:0; width:100%; margin:0 auto; position:relative;}
 .middle-inner{display: table-cell; vertical-align:middle; *position:absolute; *top:50%; *left:50%; width:100%; text-align:center;}
 .middle-inner p{position:relative; *top:-50%; *left:-50%;}
+
+
+/* ##############   产品   ##############*/
+
+.ProductContainerBlock {
+	width:100%;
+	height:100%;
+	margin-bottom:84px;
+}
+.custom-container1 {
+	width:100%;
+	background-color: white;
+	margin-top:3em;
+	margin-bottom:3em;
+}
+
+.custom-container1 li {
+	width:25%;
+	display:block;
+	float:left;
+}
+.custom-container1 img {
+	width:34%;
+}
+
+.productList {
+	width:30%;
+	height:600px;
+	float:left;
+	overflow: auto;
+	line-height: 30px;
+}
+.productList h2 {
+	font-size:20px;
+	color:#E85600;
+}
+.productList img {
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.productList a:link {color: #000;text-decoration: none;}
+.productList a:visited {color:#000;text-decoration: none;}
+.productList a:hover {color: #74523a;text-decoration: none;}
+.productList a:active {color:#000;}
+.linkactive {color: #74523a;text-decoration: none;font-weight: bold;font-size:15px;}
+
+.productDetailBlock {
+	width:70%;
+	height:100%;
+	overflow: hidden;
+}
+.productDetailContent {
+	margin-left:50px;
+}
+.productDetailContentImg {
+	float:left;
+	margin-right:30px;
+	width:250px;
+	height:330px;
+}
+.detailTitle {
+	font-size:18px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.detailText {
+	line-height:30px;
+}
+.detailHR {
+
+}

@@ -12,7 +12,7 @@ window.onload = function()
             obj.style.background="url(images/enterprice-1.png) no-repeat";
             break;
         case 'product':
-            obj.style.background="url(images/product-1.png) no-repeat";
+            obj.style.background="url(images/product-1.jpg) no-repeat";
             break;
         case 'news':
             obj.style.background="url(images/news-1.png) no-repeat";
@@ -124,6 +124,7 @@ function GetPageurl() {
 }
 
 
+//============  定义 企业介绍 子栏目切换图片   ============
 function switchSection(getID) {
     var switchid = getID.toString();
     switch(switchid)
@@ -216,6 +217,76 @@ function switchSection(getID) {
             document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt4-1.png'};
             document.getElementById('switchImage5').src="images/tt5-2.png";
             document.getElementById('switchImage5').onmouseout = null;
+            break;
+        default:
+
+    }
+}
+
+
+//============  定义 产品 子栏目切换图片   ============
+function switchSectionProduct(getID) {
+    var switchid = getID.toString();
+    switch(switchid)
+    {
+        case '1':
+            //甘草系列
+            document.getElementById('switchImage1').src="images/tt11-2.jpg";
+            document.getElementById('switchImage1').onmouseout = null;
+            document.getElementById('switchImage2').src="images/tt12-1.jpg";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt12-2.jpg'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt12-1.jpg'};
+            document.getElementById('switchImage3').src="images/tt13-1.jpg";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt13-2.jpg'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt13-1.jpg'};
+            document.getElementById('switchImage4').src="images/tt14-1.jpg";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt14-2.jpg'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt14-1.jpg'};
+            break;
+        case '2':
+            //原料药
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt11-1.jpg";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt11-2.jpg'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt11-1.jpg'};
+            document.getElementById('switchImage2').src="images/tt12-2.jpg";
+            document.getElementById('switchImage2').onmouseout = null;
+            document.getElementById('switchImage3').src="images/tt13-1.jpg";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt13-2.jpg'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt13-1.jpg'};
+            document.getElementById('switchImage4').src="images/tt14-1.jpg";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt14-2.jpg'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt14-1.jpg'};
+            break;
+        case '3':
+            //健康产品系列
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt11-1.jpg";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt11-2.jpg'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt11-1.jpg'};
+            document.getElementById('switchImage2').src="images/tt12-1.jpg";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt12-2.jpg'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt12-1.jpg'};
+            document.getElementById('switchImage3').src="images/tt13-2.jpg";
+            document.getElementById('switchImage3').onmouseout = null;
+            document.getElementById('switchImage4').src="images/tt14-1.jpg";
+            document.getElementById('switchImage4').onmouseover = function(){this.src='images/tt14-2.jpg'};
+            document.getElementById('switchImage4').onmouseout = function(){this.src='images/tt14-1.jpg'};
+            break;
+        case '4':
+            //中药饮品系列
+            document.getElementById('iframeBlock').scrolling="yes";
+            document.getElementById('switchImage1').src="images/tt11-1.jpg";
+            document.getElementById('switchImage1').onmouseover = function(){this.src='images/tt11-2.jpg'};
+            document.getElementById('switchImage1').onmouseout = function(){this.src='images/tt11-1.jpg'};
+            document.getElementById('switchImage2').src="images/tt12-1.jpg";
+            document.getElementById('switchImage2').onmouseover = function(){this.src='images/tt12-2.jpg'};
+            document.getElementById('switchImage2').onmouseout = function(){this.src='images/tt12-1.jpg'};
+            document.getElementById('switchImage3').src="images/tt13-1.jpg";
+            document.getElementById('switchImage3').onmouseover = function(){this.src='images/tt13-2.jpg'};
+            document.getElementById('switchImage3').onmouseout = function(){this.src='images/tt13-1.jpg'};
+            document.getElementById('switchImage4').src="images/tt14-2.jpg";
+            document.getElementById('switchImage4').onmouseout = null;
             break;
         default:
 
