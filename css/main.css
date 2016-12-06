@@ -506,24 +506,19 @@
 	margin-bottom:84px;
 }
 .custom-container1 {
-	width:100%;
 	background-color: white;
 	margin-top:3em;
 	margin-bottom:3em;
 }
-
-.custom-container1 li {
-	width:25%;
-	display:block;
-	float:left;
-}
 .custom-container1 img {
-	width:34%;
+	width:90px;
+	margin-left:40px;
+	margin-right:40px;
 }
 
 .productList {
 	width:30%;
-	height:600px;
+	height:460px;
 	float:left;
 	overflow: auto;
 	line-height: 30px;
@@ -546,9 +541,10 @@
 	width:70%;
 	height:100%;
 	overflow: hidden;
+	margin-top:65px;
 }
 .productDetailContent {
-	margin-left:50px;
+	margin-left:30px;
 }
 .productDetailContentImg {
 	float:left;
