@@ -541,7 +541,7 @@
 	width:70%;
 	height:100%;
 	overflow: hidden;
-	margin-top:65px;
+	/*margin-top:25px;*/
 }
 .productDetailContent {
 	margin-left:30px;
@@ -564,3 +564,45 @@
 .detailHR {
 
 }
+.breadcrumb {font-weight: bold;}
+.breadcrumb img {margin-bottom:3px;margin-right:5px;}
+
+
+
+/* ##############   Contact   ##############*/
+.contactContainer {
+	margin-top:84px;
+	margin-bottom:84px;
+
+	text-align: left;
+}
+.contactTitle {
+	margin-left:50px;
+	font-size:18px;
+	line-height:20px;
+	font-weight: bold;
+	width:100%;
+	float:left;
+	margin-bottom: 0.8em;
+}
+.contactText {
+	margin-left:50px;
+	font-size:15px;
+	line-height:25px;
+	float:left;
+}
+
+
+
+
+.productIframePingpai{
+	margin-top:30px;
+}
+.table1-title {border-bottom: #9d9d9d 1px solid;line-height: 30px;font-weight: bold;font-size:16px;}
+.table1-title img{margin-left:8px;margin-bottom:2px;}
+.table1-content{line-height:16px;font-size:14px;}
+.table1-content-left {border-bottom: #9d9d9d 1px solid;vertical-align: top;}
+.table1-content-right {border-left: #9d9d9d 1px solid;border-bottom: #9d9d9d 1px solid;vertical-align: top;}
+.table1-content-right p {margin-left:8px;}
+
+.table2-th {border-left: #9d9d9d 1px solid;border-bottom:0;}
