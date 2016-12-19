@@ -606,3 +606,64 @@
 .table1-content-right p {margin-left:8px;}
 
 .table2-th {border-left: #9d9d9d 1px solid;border-bottom:0;}
+
+
+/* ##############   news   ##############*/
+.PageNewsContainer{
+	width:100%;
+	font-size:14px;
+}
+.PageNews-Custom-iframe {
+	background-color:transparent;
+	margin-top:54px;
+}
+.PageNews-ContainerBlock {
+	width:100%;
+	height:100%;
+	margin-bottom:84px;
+}
+.PageNews-list{
+	width:30%;
+	height:460px;
+	float:left;
+	overflow: auto;
+	line-height: 30px;
+}
+.PageNews-ContainerList {
+	margin-top:25px;
+}
+.PageNews-ContainerList-Left{
+	float:left;
+	width:120px;
+	height:140px;
+}
+.PageNews-ContainerList-Right {
+	float:left;
+	width:60%;
+	height:140px;
+	display:block;
+}
+.PageNews-ContainerList-Right-Text {
+	margin-left:8px;
+	margin-right:3px;
+	margin-bottom:5px;
+	height:90px;
+	line-height:20px;
+}
+.PageNews-ContainerList-Right img {
+	vertical-align: bottom;
+	position: relative;
+}
+.PageNews-HR {
+	width:100%;
+	height:1px;
+	background-color: #bfbfbf;
+	float:left;
+	margin-bottom:20px;
+}
+.PageNews-Content {
+	width:100%;
+	height:400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

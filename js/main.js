@@ -15,7 +15,7 @@ window.onload = function()
             obj.style.background="url(images/product-1.jpg) no-repeat";
             break;
         case 'news':
-            obj.style.background="url(images/news-1.png) no-repeat";
+            obj.style.background="url(images/news-1.jpg) no-repeat";
             break;
         case 'contact':
             obj.style.background="url(images/contact-1.jpg) no-repeat";
